@@ -27,7 +27,7 @@ export default function CountryGrid({
 
   return (
     <section className="md:w-3/4 lg:w-2/3">
-      <table className="my-7 w-full text-greyLight text-left">
+      <table className="block my-7 w-full text-greyLight text-left overflow-x-auto sm:table">
         <thead>
           <tr className="border-greyMid border-b-[1px] h-14 text-greyMid">
             <th className="font-medium">Flag</th>
