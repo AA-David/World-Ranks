@@ -46,11 +46,11 @@ export default function CountryGrid({
                 tabIndex={3}
                 onClick={() => handleClick(country)}
                 role="button">
-                <td className="py-2">
+                  <td className="py-2 min-w-[130px]">
                   <img
                     src={`https://flagcdn.com/h60/${country.cca2.toLowerCase()}.png`}
                     alt={`${country.name.common}'s flag`}
-                    className="rounded-lg min-w-fit"/>
+                    className="rounded-lg"/>
                 </td>
                 <td className="w-min">{country.name.common}</td>
                 <td>{country.population}</td>
