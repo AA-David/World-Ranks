@@ -41,7 +41,7 @@ export default function CountryStats({ countrySelected, setCountrySelected }) {
           <img
             src={`https://flagcdn.com/h240/${countrySelected?.cca2.toLowerCase()}.png`}
             alt={`${countrySelected?.name.common}'s flag`}
-            className="-mt-10 mb-7 rounded-3xl"/>
+            className="-mt-10 mb-7 rounded-3xl max-w-[90%]"/>
           <p className="mb-2 font-semibold text-4xl text-center">
             {countrySelected?.name.common}
           </p>
