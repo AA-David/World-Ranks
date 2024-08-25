@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #161719;
+}
+
+.chip {
+    @apply px-2.5 py-1.5 rounded-xl text-greyMid hover:cursor-pointer select-none;
+}
+
+.statusLabel {
+    @apply block text-greyLight hover:cursor-pointer select-none mb-3 ml-9;
+}
+
+.statusCheckbox {
+    @apply border-2 bg-black checked:bg-blue mr-3 mb-1 rounded-[5px] w-6 h-6 -ml-9;
+}
