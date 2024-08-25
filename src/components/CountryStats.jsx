@@ -116,7 +116,7 @@ export default function CountryStats({ countrySelected, setCountrySelected }) {
                   <img
                     src={`https://flagcdn.com/w160/${borderingCountry?.cca2.toLowerCase()}.png`}
                     alt={`${borderingCountry?.name.common}'s flag`}
-                    className="mb-2 rounded-lg h-[60px]"/>
+                    className="mb-2 rounded-lg w-full max-h-[70px]"/>
                   <p className="w-fit text-sm self-start">
                     {borderingCountry.name.common}
                   </p>
