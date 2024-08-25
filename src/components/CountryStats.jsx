@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import backIcon from "../images/Back.svg";
 
 export default function CountryStats({ countrySelected, setCountrySelected }) {
   const [neighboursURL, setNeighboursURL] = useState("");
@@ -132,11 +131,8 @@ export default function CountryStats({ countrySelected, setCountrySelected }) {
         )}
       </section>
 
-      <button
-        onClick={() => setCountrySelected(undefined)}
-        className="flex border-[1px] bg-grey ml-4 px-4 py-2 border-transparent hover:border-blue rounded-lg transition-all duration-[50ms]"
-      >
-        <img src={backIcon} alt="Back button" className="mr-1 w-[25px]" />
+      <button onClick={() => setCountrySelected(undefined)}
+              className="flex border-[1px] bg-grey ml-4 px-4 py-2 border-transparent hover:border-blue rounded-lg transition-all duration-[50ms]">
         Back
       </button>
     </div>
