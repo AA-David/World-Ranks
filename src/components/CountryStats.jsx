@@ -38,7 +38,10 @@ export default function CountryStats({ countrySelected, setCountrySelected }) {
         countrySelected ? "" : "hidden"}`}>
       <section>
         <div className="flex flex-col items-center">
-          <p className="-mt-48 -mb-32 text-[25rem]">{countrySelected?.flag}</p>
+          <img
+            src={`https://flagcdn.com/h240/${countrySelected?.cca2.toLowerCase()}.png`}
+            alt={`${countrySelected?.name.common}'s flag`}
+            className="-mt-10 mb-7 rounded-3xl"/>
           <p className="mb-2 font-semibold text-4xl text-center">
             {countrySelected?.name.common}
           </p>
@@ -102,19 +105,20 @@ export default function CountryStats({ countrySelected, setCountrySelected }) {
         <p className="mb-4 text-greyMid">Neighbouring Countries</p>
 
         {neighboursData.length !== 0 ? (
-          <div className="gap-4 grid grid-cols-[repeat(auto-fill,_minmax(120px,_1fr))] mb-7">
+          <div className="gap-4 grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] mb-7">
             {neighboursData?.map((borderingCountry) => {
               return (
                 <div
                   key={borderingCountry.name.common}
                   tabIndex="0"
-                  className="hover:bg-grey px-4 py-3 rounded-xl w-fit transition-colors duration-[50ms] hover:cursor-pointer"
+                  className="hover:bg-grey px-4 py-3 rounded-lg transition-colors duration-[50ms] hover:cursor-pointer"
                   onClick={() => handleClick(borderingCountry)}
                 >
-                  <p className="-mb-1 w-fit text-8xl">
-                    {borderingCountry.flag}
-                  </p>
-                  <p className="w-fit text-sm">
+                  <img
+                    src={`https://flagcdn.com/w160/${borderingCountry?.cca2.toLowerCase()}.png`}
+                    alt={`${borderingCountry?.name.common}'s flag`}
+                    className="mb-2 rounded-lg h-[60px]"/>
+                  <p className="w-fit text-sm self-start">
                     {borderingCountry.name.common}
                   </p>
                 </div>

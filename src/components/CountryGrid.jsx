@@ -42,7 +42,7 @@ export default function CountryGrid({
             return (
               <tr
                 key={country.name.common}
-                className="hover:border-y-[1px] hover:border-blue text-lg transition-transform hover:translate-x-10 hover:cursor-pointer md:hover:scale-105"
+                className="hover:border-y-[1px] hover:border-blue text-lg transition-transform md:hover:translate-x-10 hover:cursor-pointer md:hover:scale-105"
                 tabIndex={3}
                 onClick={() => handleClick(country)}
                 role="button">
