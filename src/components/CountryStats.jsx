@@ -110,7 +110,7 @@ export default function CountryStats({ countrySelected, setCountrySelected }) {
                 <div
                   key={borderingCountry.name.common}
                   tabIndex="0"
-                  className="hover:bg-grey px-4 py-3 rounded-lg transition-colors duration-[50ms] hover:cursor-pointer"
+                  className="flex flex-col justify-between hover:bg-grey px-4 py-3 rounded-lg transition-colors duration-[50ms] hover:cursor-pointer"
                   onClick={() => handleClick(borderingCountry)}
                 >
                   <img
