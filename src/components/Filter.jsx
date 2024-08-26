@@ -12,25 +12,22 @@ export default function Filter({
         <ul>
           {/* Sorting */}
           <label
-            htmlFor="sortingOptions"
+            htmlFor="sortingOption"
             className="block mt-7 mb-2 font-semibold text-greyMid">
             Sort By
           </label>
           <li>
             <select
-              name="sortingOption"
-              className="border-1 border-greyMid bg-blackLight rounded-lg w-full text-greyLight">
-              <option
-                value="population"
-                onClick={() => setSelectedSorting("population")}>
+              id="sortingOption"
+              className="border-1 border-greyMid bg-blackLight rounded-lg w-full text-greyLight"
+              onChange={(e) => setSelectedSorting(e.target.value)}>
+              <option value="population">
                 Population
               </option>
-              <option value="area" onClick={() => setSelectedSorting("area")}>
+              <option value="area">
                 Area km2
               </option>
-              <option
-                value="alphabetical"
-                onClick={() => setSelectedSorting("alphabetical")}>
+              <option value="alphabetical">
                 Alphabetical
               </option>
             </select>
