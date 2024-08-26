@@ -27,7 +27,7 @@ export default function CountryGrid({
 
   return (
     <section className="md:w-3/4 lg:w-2/3">
-      <table className="block my-7 w-full text-greyLight text-left overflow-x-auto sm:table">
+      <table className="block my-7 text-greyLight text-left overflow-x-auto xs:table w-full">
         <thead>
           <tr className="border-greyMid border-b-[1px] h-14 text-greyMid">
             <th className="font-medium">Flag</th>
@@ -46,13 +46,13 @@ export default function CountryGrid({
                 tabIndex={3}
                 onClick={() => handleClick(country)}
                 role="button">
-                  <td className="py-2 min-w-[130px]">
+                  <td className="py-2 min-w-[120px]">
                   <img
                     src={`https://flagcdn.com/h60/${country.cca2.toLowerCase()}.png`}
                     alt={`${country.name.common}'s flag`}
                     className="rounded-lg"/>
                 </td>
-                <td className="w-min">{country.name.common}</td>
+                <td>{country.name.common}</td>
                 <td>{country.population}</td>
                 <td>{country.area}</td>
                 <td className="hidden xl:table-cell">{country.region}</td>

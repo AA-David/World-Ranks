@@ -8,26 +8,27 @@ export default {
   ],
   theme: {
     screens: {
+      'xs': '500px',
       'xl.5': '1360px',
       ...defaultTheme.screens,
     },
     fontFamily: {
       sans: [
-        'Be Vietnam Pro', 
-             'ui-sans-serif',
-             'system-ui',
-             '-apple-system',
-             'BlinkMacSystemFont',
-             'Segoe UI',
-             'Roboto',
-             'Helvetica Neue',
-             'Arial',
-             'Noto Sans',
-             'sans-serif',
-             'Apple Color Emoji',
-             'Segoe UI Emoji',
-             'Segoe UI Symbol',
-             'Noto Color Emoji']
+        'Be Vietnam Pro',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Segoe UI',
+        'Roboto',
+        'Helvetica Neue',
+        'Arial',
+        'Noto Sans',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji']
     },
     extend: {
       colors: {
