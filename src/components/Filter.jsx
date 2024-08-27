@@ -7,7 +7,7 @@ export default function Filter({
   editRegions,
 }) {
   return (
-    <section className="md:w-1/4 lg:w-1/3">
+    <section>
       <form>
         <ul>
           {/* Sorting */}

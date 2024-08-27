@@ -9,7 +9,7 @@ export default function Pagination({
   }
 
   return (
-    <div className="gap-4 grid grid-cols-[repeat(auto-fill,_minmax(2.5rem,_1fr))]">
+    <div className="gap-4 grid grid-cols-[repeat(auto-fill,_minmax(2.5rem,_1fr))] mt-7">
       {paginationNumbers.map((pageNumber) => {
         return (
           <button
