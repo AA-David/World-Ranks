@@ -3,7 +3,6 @@ import CountryGrid from "./CountryGrid";
 import Search from "./Search";
 
 import useFilterCountryArray from "../hooks/useFilterCountryArray";
-import Pagination from "./Pagination";
 
 export default function Content({ countrySelected, setCountrySelected }) {
   const {
